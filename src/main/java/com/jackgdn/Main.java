@@ -30,10 +30,10 @@ public class Main {
         Book b2 = new Book("QK12.04.002", "The Hitchhiker's Guide To The Galaxy");
         System.out.println(String.format("%s %s %s", b2.getBookCode(), b2.getBookTitle(), b2.isAvailable()));
         /*
-         * * Output: * QS12.03.001 The Lord Of The Rings true * QK12.04.002 The
-         * Hitchhiker's Guide To The Galaxy true
+         * Output:
+         * QS12.03.001 The Lord Of The Rings true
+         * QK12.04.002 The Hitchhiker's Guide To The Galaxy true
          */
-    }
 
     public static void Question2() {
         Book b1 = new Book("QS12.03.001", "The Lord Of The Rings");
@@ -44,9 +44,11 @@ public class Main {
         System.out.println();
         System.out.println(b2);
         /*
-         * * Output: * The Lord Of The Rings, QS12.03.001 (Available) * The Hitchhiker's
-         * Guide To The Galaxy, QK12.04.002 (Available) * * The Hitchhiker's Guide To
-         * The Galaxy, QK12.04.002 (On Loan)
+         * Output:
+         * The Lord Of The Rings, QS12.03.001 (Available)
+         * The Hitchhiker's Guide To The Galaxy, QK12.04.002 (Available)
+         *
+         * The Hitchhiker's Guide To The Galaxy, QK12.04.002 (On Loan)
          */
     }
 
@@ -55,7 +57,11 @@ public class Main {
         System.out.println(String.format("%s %d", m1.getName(), m1.getMemberId()));
         Member m2 = new Member(1002, "Paul");
         System.out.println(String.format("%s %d", m2.getName(), m2.getMemberId()));
-        /* * Output: * Michael 1001 * Paul 1002 */
+        /*
+         * Output:
+         * Michael 1001
+         * Paul 1002
+         */
     }
 
     public static void Question4() {
@@ -72,8 +78,15 @@ public class Main {
         System.out.println();
         System.out.println(m2);
         /*
-         * * Output: * Michael * On loan book(s): * The Hitchhiker's Guide To The Galaxy
-         * * The Dune Chronicles * * Paul * On loan book(s): * -
+         * Output:
+         * Michael
+         * On loan book(s):
+         * The Hitchhiker's Guide To The Galaxy
+         * The Dune Chronicles
+         *
+         * Paul
+         * On loan book(s):
+         * -
          */
     }
 
@@ -90,8 +103,14 @@ public class Main {
         System.out.println();
         System.out.println(b1);
         /*
-         * * Output: * 1001 QS12.03.001 2020-08-12 true * * Michael * On loan book(s): *
-         * The Lord Of The Rings * * The Lord Of The Rings, QS12.03.001 (On Loan)
+         * Output:
+         * 1001 QS12.03.001 2020-08-12 true
+         *
+         * Michael
+         * On loan book(s):
+         * The Lord Of The Rings
+         *
+         * The Lord Of The Rings, QS12.03.001 (On Loan)
          */
     }
 
@@ -112,11 +131,18 @@ public class Main {
         System.out.println();
         System.out.println(m1);
         /*
-         * * Output: * Michael, The Lord Of The Rings, QS12.03.001 (On Loan), issued
-         * date=2020-08-12 * Michael, The Dune Chronicles, QS12.02.003 (On Loan), issued
-         * date=2020-08-15 * * Michael, The Lord Of The Rings, QS12.03.001 (Available),
-         * issued * date=2020-08-12 * * The Lord Of The Rings, QS12.03.001 (Available) *
-         * * Michael * On loan book(s): * The Dune Chronicles
+         * Output:
+         * Michael, The Lord Of The Rings, QS12.03.001 (On Loan), issued date=2020-08-12
+         * Michael, The Dune Chronicles, QS12.02.003 (On Loan), issued date=2020-08-15
+         *
+         * Michael, The Lord Of The Rings, QS12.03.001 (Available), issued
+         * date=2020-08-12
+         *
+         * The Lord Of The Rings, QS12.03.001 (Available)
+         *
+         * Michael
+         * On loan book(s):
+         * The Dune Chronicles
          */
     }
 
@@ -125,10 +151,14 @@ public class Main {
         System.out.println();
         library.showAllBooks();
         /*
-         * * Output: * 5 books loaded. * * The Lord Of The Rings, QS12.03.001
-         * (Available) * The Hitchhiker's Guide To The Galaxy, QK12.04.002 (Available) *
-         * The Dune Chronicles, QS12.02.003 (Available) * A Song Of Ice And Fire Series,
-         * QA12.04.004 (Available) * The Foundation Trilogy, QS12.01.005 (Available)
+         * Output:
+         * 5 books loaded.
+         *
+         * The Lord Of The Rings, QS12.03.001 (Available)
+         * The Hitchhiker's Guide To The Galaxy, QK12.04.002 (Available)
+         * The Dune Chronicles, QS12.02.003 (Available)
+         * A Song Of Ice And Fire Series, QA12.04.004 (Available)
+         * The Foundation Trilogy, QS12.01.005 (Available)
          */
     }
 
@@ -146,12 +176,21 @@ public class Main {
         System.out.println();
         System.out.println(m1);
         /*
-         * * Output: * 5 books loaded. * * The Dune Chronicles is borrowed by Michael. *
-         * * A Song Of Ice And Fire Series is borrowed by Michael. * * The Lord Of The
-         * Rings, QS12.03.001 (Available) * The Hitchhiker's Guide To The Galaxy,
-         * QK12.04.002 (Available) * The Foundation Trilogy, QS12.01.005 (Available) * *
-         * Michael * On loan book(s): * The Dune Chronicles * A Song Of Ice And Fire
-         * Series
+         * Output:
+         * 5 books loaded.
+         *
+         * The Dune Chronicles is borrowed by Michael.
+         *
+         * A Song Of Ice And Fire Series is borrowed by Michael.
+         *
+         * The Lord Of The Rings, QS12.03.001 (Available)
+         * The Hitchhiker's Guide To The Galaxy, QK12.04.002 (Available)
+         * The Foundation Trilogy, QS12.01.005 (Available)
+         *
+         * Michael
+         * On loan book(s):
+         * The Dune Chronicles
+         * A Song Of Ice And Fire Series
          */
     }
 
@@ -174,13 +213,25 @@ public class Main {
         System.out.println();
         System.out.println(b2);
         /*
-         * * Output: * 5 books loaded. * * The Dune Chronicles is borrowed by Michael. *
-         * * The Hitchhiker's Guide To The Galaxy is borrowed by Michael. * *
-         * QK12.04.002 is returned successfully. * * The Lord Of The Rings, QS12.03.001
-         * (Available) * The Hitchhiker's Guide To The Galaxy, QK12.04.002 (Available) *
-         * A Song Of Ice And Fire Series, QA12.04.004 (Available) * The Foundation
-         * Trilogy, QS12.01.005 (Available) * * Michael * On loan book(s): * The Dune
-         * Chronicles * * The Hitchhiker's Guide To The Galaxy, QK12.04.002 (Available)
+         * Output:
+         * 5 books loaded.
+         *
+         * The Dune Chronicles is borrowed by Michael.
+         *
+         * The Hitchhiker's Guide To The Galaxy is borrowed by Michael.
+         *
+         * QK12.04.002 is returned successfully.
+         *
+         * The Lord Of The Rings, QS12.03.001 (Available)
+         * The Hitchhiker's Guide To The Galaxy, QK12.04.002 (Available)
+         * A Song Of Ice And Fire Series, QA12.04.004 (Available)
+         * The Foundation Trilogy, QS12.01.005 (Available)
+         *
+         * Michael
+         * On loan book(s):
+         * The Dune Chronicles
+         *
+         * The Hitchhiker's Guide To The Galaxy, QK12.04.002 (Available)
          */
     }
 
