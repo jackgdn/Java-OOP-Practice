@@ -34,6 +34,7 @@ public class Main {
          * QS12.03.001 The Lord Of The Rings true
          * QK12.04.002 The Hitchhiker's Guide To The Galaxy true
          */
+    }
 
     public static void Question2() {
         Book b1 = new Book("QS12.03.001", "The Lord Of The Rings");
